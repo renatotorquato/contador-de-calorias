@@ -1,0 +1,105 @@
+:root {
+  --dark-gray: #2e3440;
+  --white: #eceff4;
+  --light-blue: #88c0d0;
+  --medium-blue: #81a1c1;
+  --green: #a3be8c;
+  --red: #bf616a;
+  --medium-gray: #4c566a;
+  --blue: #5e81ac;
+}
+
+body {
+  font-family: "Lato", Helvetica, Arial, sans-serif;
+  font-size: 15px;
+  background-color: var(--dark-gray);
+  color: var(--white);
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: var(--blue);
+  padding: 5px;
+  text-align: center;
+  color: var(--white);
+}
+
+.container {
+  width: 90%;
+  max-width: 800px;
+  margin: 20px auto;
+  background-color: var(--medium-gray);
+  padding: 10px;
+  border-radius: 15px;
+}
+
+h1,
+.output {
+  margin: 5px 0;
+}
+
+.form-group {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
+}
+
+label,
+legend {
+  font-weight: bold;
+}
+
+.input-container {
+  display: flex;
+  flex-direction: column;
+}
+
+button {
+  cursor: pointer;
+  text-decoration: none;
+  background-color: var(--light-blue);
+  border: 2px solid var(--medium-blue);
+  padding: 10px;
+  border-radius: 5px;
+}
+
+button,
+input,
+select {
+  min-height: 20px;
+  color: var(--dark-gray);
+  padding: 5px;
+}
+
+fieldset,
+label,
+button,
+input,
+select {
+  margin-bottom: 5px;
+}
+
+.output {
+  border: 2px solid var(--medium-gray);
+  padding: 20px;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.hide {
+  display: none;
+}
+
+.output span {
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+.surplus {
+  color: var(--red);
+}
+
+.deficit {
+  color: var(--green);
+}
